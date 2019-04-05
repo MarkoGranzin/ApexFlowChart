@@ -12,7 +12,7 @@
   "author" : {
     "name" : "Marko Granzin",
     "email" : "marko.granzin@gmx.de",
-    "url" : "https://www.paypal.me/Medinchen"
+    "donationUrl" : "https://www.paypal.me/Medinchen"
   },
   "repository" : {
     "type" : "git",
