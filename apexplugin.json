@@ -1,5 +1,5 @@
 {
-    "name": "APEX flow chart",
+    "name": "APEX Flow Chart ,
     "version": "0.5.0",
     "description": "This plug in is an easy to use flow chart. The flow is completly data driven and you can style it as you want. The flow chart supports an manual and an auto refresh. When clicking on a vertex an event is fired, which can be catched by a dynamic action The flow chart is based on the mxgraph libary.",
     "keywords": ["oracle", "apex", "plugin", "flow", "region", "chart", "auto refresh", "responsive"],
@@ -23,10 +23,10 @@
         "apex": {
             "versions": ["5.1.0", "5.1.1", "5.1.2", "5.1.3", "5.1.4", "18.1", "18.2"],
             "plugin": {
-                "internalName": "MATERIAL.KANBAN",
+                "internalName": "APEX.FLOW.CHART",
                 "type": "region",
                 "demo": "https://apex.oracle.com/pls/apex/f?p=24068",
-                "previewImage": "https://raw.githubusercontent.com/McRange/Material-Kanban-Board/master/screenshot.gif"
+                "previewImage": "https://raw.githubusercontent.com/MarkoGranzin/ApexFlowChart/master/screenshot.gif"
             }
         }
     }
