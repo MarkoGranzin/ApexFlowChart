@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>APEX Flow Chart</title>
+    <link href="css/font-apex.min.css" rel="stylesheet">
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/mxClient.js"></script>
+    <script src="lib/jsonpath-0.8.0.js"></script>
+    <script src="js/script.js"></script>
+    <script src="data/data.js"></script>
+    <script>
+	$(document).on("CellClicked", cellHandler);
+	$("body").on("CellClicked", cellHandler);
+	$(document).on("EdgeClicked", edgeHandler);
+	$("body").on("EdgeClicked", edgeHandler);
+	// newMessage event handler
+	function cellHandler(e) {
+		console.log(e);
+		alert('CellClicked ' + e.message);
+	}
+
+	// newMessage event handler
+	function edgeHandler(e) {
+		console.log(e);
+		alert('EdgeClicked ' + e.message);
+	}
+
+</script>
+</head>
+
+<body onload="flow.initialize('plugin',null, configJson,null,null, dataJson);">
+    <div id="plugin" style="position:relative;"></div>
+</body>
+
+</html>
