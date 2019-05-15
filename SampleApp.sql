@@ -27,7 +27,7 @@ prompt APPLICATION 24068 - Demo App
 -- Application Export:
 --   Application:     24068
 --   Name:            Demo App
---   Date and Time:   05:36 Thursday May 9, 2019
+--   Date and Time:   14:47 Wednesday May 15, 2019
 --   Exported By:     MARAS-@GMX.DE
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -118,7 +118,7 @@ wwv_flow_api.create_flow(
 ,p_substitution_string_01=>'APP_NAME'
 ,p_substitution_value_01=>'Demo App'
 ,p_last_updated_by=>'MARAS-@GMX.DE'
-,p_last_upd_yyyymmddhh24miss=>'20190509053420'
+,p_last_upd_yyyymmddhh24miss=>'20190515144508'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>3
 ,p_ui_type_name => null
@@ -19143,7 +19143,7 @@ wwv_flow_api.create_plugin(
 '    ',
 '     APEX_JAVASCRIPT.ADD_ONLOAD_CODE( ''colorselector.initialize(''',
 '     || APEX_JAVASCRIPT.ADD_VALUE( p_item.name, TRUE ) ',
-'     || APEX_JAVASCRIPT.ADD_VALUE( l_color_json, TRUE ) ',
+'     || APEX_JAVASCRIPT.ADD_VALUE( l_color_json, FALSE ) ',
 '     || '');'' );',
 '        p_result.is_navigable := not l_is_disabled;',
 'end render;',
@@ -19174,7 +19174,8 @@ wwv_flow_api.create_plugin(
 ,p_subscribe_plugin_settings=>true
 ,p_is_quick_pick=>true
 ,p_help_text=>'Just add this item to your application and it already works. If you want you can overwrite colors check the help of the  Color Json.'
-,p_version_identifier=>'1.0'
+,p_version_identifier=>'1.0.2'
+,p_about_url=>'https://github.com/MarkoGranzin/ApexColorPalette'
 ,p_files_version=>98
 );
 wwv_flow_api.create_plugin_attribute(
@@ -22985,10 +22986,11 @@ wwv_flow_api.create_page(
 ,p_user_interface_id=>wwv_flow_api.id(1650283649801977830)
 ,p_name=>'Color Palette'
 ,p_step_title=>'Color Palette'
+,p_warn_on_unsaved_changes=>'N'
 ,p_autocomplete_on_off=>'OFF'
 ,p_page_template_options=>'#DEFAULT#'
 ,p_last_updated_by=>'MARAS-@GMX.DE'
-,p_last_upd_yyyymmddhh24miss=>'20190509053420'
+,p_last_upd_yyyymmddhh24miss=>'20190515143840'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(3705830333842548541)
